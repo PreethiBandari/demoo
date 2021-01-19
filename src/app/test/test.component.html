@@ -1,0 +1,20 @@
+<h3>
+Age is :{{age}}<br/>
+Name is:{{name}}<br/>
+Salary is:{{salary}}<br/>
+<h4>
+Hobbies:
+<ul>
+    <li *ngFor='let hobby of hobbies'>{{hobby}}</li>
+</ul>
+</h4>
+Address:<br>
+Door No: {{address.doorNo}}<br/>
+Street: {{address.street}}<br/>
+City: {{address.city}}<br/>
+</h3>
+
+<input type="text" [(ngModel)]="message">
+{{message}}
+
+<button (click)="showMessage()">click here...</button>
